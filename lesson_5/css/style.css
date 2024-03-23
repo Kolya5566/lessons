@@ -1,0 +1,145 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700&display=swap);
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap);
+
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+    font-family: "ProximaNova-Regular", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    color: #2b2929;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+.header-zec {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    padding: 20px;
+}
+.header-scroll {
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+
+.main-instagram {
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    padding: 5px 200px;
+    background-color: #1e283213;
+    margin-bottom: 20px;
+}
+.main-instagram-zec {
+    padding: 20px;
+    text-align: center;
+}
+.main-instagram-zec-zec {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.main-vitalnya {
+    font-family: "Proxima Nova",sans-serif;
+    font-weight: 400;
+    padding: 20px 300px;
+    line-height: 1.875; /* 30/16 */
+}
+.main-vitalnya-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.main-vitalnya-picture {
+    padding: 0px 0px 20px 0px;
+}
+.main-vitalnya-one {
+    line-height: 1.875; /* 30/16 */
+    padding-bottom: 20px;
+}
+.main-vitalnya-two {
+    font-size: 20px;
+    line-height: 1.40; /* 28/20 */
+    padding-bottom: 20px;
+}
+.main-vitalnya-three {
+    padding-bottom: 30px;
+}
+
+
+
+.main-kravato {
+    font-family: "Proxima Nova",sans-serif;
+    font-weight: 400;
+    line-height: 1.875; /* 30/16 */
+    text-align: center;
+    
+}
+.main-kravato-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    /* padding: 30px; */
+}
+.main-kravato-1 {
+    font-size: 26px;
+    line-height: 1.30769231; /* 34/26 */
+}
+.main-kravato-2 {
+    font-size: 16px;
+    line-height: 1.875; /* 30/16 */
+}
+.main-kravato-one {
+    width: 300px;
+    padding: 18px;
+    display: inline-block;
+    vertical-align: top;
+}
+.main-kravato-two {
+    width: 300px;
+    padding: 18px;
+    display: inline-block;
+    vertical-align: top;
+}
+.main-kravato-three {
+    width: 300px;
+    padding: 18px;
+    display: inline-block;
+    vertical-align: top;
+}
+.main-kravato-four {
+    width: 300px;
+    padding: 18px;
+    display: inline-block;
+    vertical-align: top;
+}
+.footer{
+    font-family: "fonts/ProximaNova-Semibold", sans-serif;
+    font-weight: 600;
+}
+.footer-three {
+    font-size: 45px;
+    font-style: italic;
+}
+.footer-contacts {
+    font-size: 25px;
+    color: rgba(45, 45, 241, 0.9);
+    text-decoration: underline;
+}
