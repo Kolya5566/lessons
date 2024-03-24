@@ -41,7 +41,7 @@ body {
     font-family: "Roboto",sans-serif;
     font-weight: 500;
     font-size: 50px;
-    padding: 5px 200px;
+    padding: 5px 200px 5px 200px;
     background-color: #1e283213;
     margin-bottom: 20px;
 }
@@ -58,8 +58,11 @@ body {
 .main-vitalnya {
     font-family: "Proxima Nova",sans-serif;
     font-weight: 400;
-    padding: 20px 300px;
     line-height: 1.875; /* 30/16 */
+    padding-top: 20px;
+    margin: 0px 300px 0px 300px;
+    width: 100%;
+    max-width: 1070px;
 }
 .main-vitalnya-title {
     text-align: center;
@@ -68,7 +71,7 @@ body {
     padding-bottom: 20px;
 }
 .main-vitalnya-picture {
-    padding: 0px 0px 20px 0px;
+    padding-bottom: 20px;
 }
 .main-vitalnya-one {
     line-height: 1.875; /* 30/16 */
