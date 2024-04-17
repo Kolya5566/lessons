@@ -1,0 +1,316 @@
+
+
+
+@import url("fonts.css");
+
+@import url("reset.css");
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+
+
+.main {
+    padding-top: 20px;
+    /* padding-bottom: 50px; */
+    background-color: antiquewhite;
+}
+.main__container {
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.practice {
+    /* background-color: antiquewhite; */
+    text-align: center;
+}
+.main__title {
+    font-size: 55px;
+    text-decoration: underline;
+    /* text-align: center; */
+    padding-bottom: 20px;
+}
+.main__subtitle {
+    font-size: 35px;
+    text-align: center;
+    color: rgb(13, 111, 79);
+    padding-bottom: 20px;
+
+}
+.practice__block {
+    /* transition: all 0.6s; */
+    margin-bottom: 50px;
+}
+
+.practice__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(83, 83, 232, 0.4);
+}
+.block-2d,
+.block-3d {
+    margin-right: 50px;
+    /* transition: all 0.6s; */
+}
+.block-2d__item,
+.block-3d__item {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(73, 160, 73, 0.6);
+    /* transform: translate(20px, 20px); */
+    /* transition: all 0.6s; */
+}
+.block-2d__item--translate:hover {
+    transform: translate(20px, 20px);
+    /* або так можна */
+    /* transform: translateX(-20px) translateY(20px); */
+    transition: all 0.6s;
+}
+.block-2d__item--translate-interest:hover {
+    transform: translate(20%, -20%);
+    transition: all 0.9s;
+}
+.block-2d__item--scale:hover {
+    transform: scale(2);
+    transition: all 0.9s;
+    /* можна і так пробувати розтягує */
+    /* transform: scale(2, 5);
+    transition: all 0.9s; */
+}
+.block-2d__item--scale-back:hover {
+    transform: scale(0.5);
+    transition: all 0.9s;
+}
+.block-2d__item--scale-mirror:hover {
+    transform: scale(-1, 1);
+    transition: all 1s;
+}
+.block-2d__item--rotate-180deg:hover {
+    transform: rotate(-180deg);
+    transition: all 0.9s;
+}
+.block-2d__item--rotate45deg:hover {
+    transform: rotate(45deg);
+    transition: all 0.9s;
+}
+.block-2d__item--rotateX90deg:hover {
+    transform: rotateX(90deg);
+    transition: all 0.9s;
+}
+.block-2d__item--rotateY90deg:hover {
+    transform: rotateY(90deg);
+    transition: all 0.9s;
+}
+.block-2d__item--rotate360deg:hover {
+    transform: rotate(360deg);
+    transition: all 0.9s;
+}
+.block-2d__item--skew:hover {
+    transform: skew(20deg, 15deg);
+    transition: all 0.9s;
+}
+.block-2d__item--skew-20deg:hover {
+    transform: skew(-20deg, 0deg);
+    transition: all 0.9s;
+}
+.block-2d__item--matrix:hover {
+    transform: matrix(1, 2, 5, 1, 10, 50);
+    transition: all 0.9s;
+}
+.block-2d__item--matrix2:hover {
+    transform: translate(20px, 20px) scale(0.5) rotate(-25deg) skew(-30deg);
+    transition: all 0.9s;
+}
+.block-2d__item--origin:hover {
+    transform: rotate(40deg);
+    /* center це за замовченням */
+    transform-origin: center;
+    transition: all 0.9s;
+}
+.block-2d__item--origin2:hover {
+    transform: rotate(45deg);
+    transform-origin: 0 0;
+    transition: all 0.9s;
+}
+.block-2d__item--origin3:hover {
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+    transition: all 0.9s;
+}
+.block-2d__item--origin4:hover {
+    transform: rotate(20deg);
+    transform-origin: top;
+    transition: all 0.9s;
+}
+.block-2d__item--origin5:hover {
+    transform: rotate(200deg);
+    transform-origin: -20px 0px; 
+    transition: all 0.9s;
+}
+
+
+.block-3d {
+    perspective: 400px;
+    
+    /* perspective-origin: center; 
+    це за замовченням еле можна міняти */
+}
+.block-3d__item--rotateX:hover {
+    transform: rotateX(45deg);
+    transition: all 0.9s;
+}
+.block-3d__item--translate3d:hover {
+    transform: translate3d(20px, -20px, 50px);
+    transition: all 0.9s;
+}
+.block-3d__item--scale3d:hover {
+    transform: scale3d(2, 2,2);
+    transition: all 0.9s;
+}
+.block-3d__item--rotate3d:hover {
+    transform: rotate3d(0, 20, 0, 30deg);
+    transition: all 0.9s;
+}
+.block-3d__item--translate3d-2:hover {
+    transform: translate3d(20px, 20px, 20px) rotate3d(1, 1, 1, 20deg);
+    transition: all 0.9s;
+}
+
+.block-3d--style {
+    transform-style: preserve-3d;
+}
+.block-3d__item--style:hover {
+    transform: rotateX(20deg);
+    transition: all 0.9s;
+}
+.block-3d__item--hidden:hover {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition: all 2s;
+}
+
+
+
+
+.practice__trancform {
+    display: inline-block;
+    vertical-align: top;
+}
+.trancform-3d {
+}
+.trancform-3d__item,
+.block-3d__two {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    transition: all 0.5s;
+}
+.trancform-3d__item {
+    background-color: rgba(83, 83, 232, 0.4);
+    transform: rotateY(-180deg);
+}
+.block-3d__two {
+    background-color: rgb(73, 160, 73, 1);
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+}
+.trancform-3d:hover .trancform-3d__item {
+    transform: rotateY(0deg);
+}
+.trancform-3d:hover .block-3d__two {
+    transform: rotateY(180deg);
+}
+
+
+
+.car {
+    /* margin: 0 auto; */
+    /* transform: rotate(-5deg); */
+}
+
+.car-block {
+    width: 1240px;
+	height: 620px;
+    margin: 0 auto;
+}
+.car__body {
+    background: linear-gradient(0deg, rgba(15,13,10,1) 0%, rgba(57,108,63,1) 100%);
+	width: 800px;
+	height: 180px;
+	border-radius: 8px 8px 40px 40px;
+
+	position: relative;
+	top: 295px;
+	left: 150px;
+}
+.car__cabin {
+    background: linear-gradient(0deg, rgba(15,13,10,1) 0%, rgba(57,108,63,1) 100%);
+    width: 300px;
+	height: 150px;
+    border-radius: 0px 20px 0 0;
+    transform: skew(50deg, 0deg);
+
+    position: absolute;
+	top: -150px;
+	left: 400px;
+
+}
+.car__glass {
+    background: linear-gradient(0deg, rgba(48,220,222,1) 0%, rgba(208,221,114,1) 41%, rgba(70,196,85,1) 100%);
+	width: 200px;
+	height: 100px;
+    border-radius: 0px 20px 0 0;
+    transform: skew(0deg, 0deg);
+
+	position: absolute;
+	top: 20px;
+	left: 50px;
+
+}
+.car__wheel-1,
+.car__wheel-2,
+.car__wheel-3 {
+    background-color: #212026;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	border: 10px dashed #495089;
+	position: absolute;
+	top: 70%;
+}
+
+.car__wheel-1 {
+    left: 650px;
+    
+}
+.car__wheel-2 {
+    left: 140px;
+}
+.car__wheel-3 {
+    left: 30px;
+}
+
+.car__wheel:hover .car__wheel-1 {
+    transform: rotate(360deg);
+    transition: all 0.9s;
+}
+.car__wheel:hover .car__wheel-2 {
+    transform: rotate(360deg);
+    transition: all 0.9s;
+}
+.car__wheel:hover .car__wheel-3 {
+    transform: rotate(360deg);
+    transition: all 0.9s;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 11</title>
+    
+</head>
+<body >
+    <div class="wrapper">
+
+        <header class="header">
+        </header>
+
+        <main class="main">
+            <div class="main__container">
+                <div class="practice">
+                    <h1 class="main__title">Трансформація</h1>
+                    <h2 class="main__subtitle">2D Трансформації</h2>
+                    <div class="practice__block">
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--translate">
+                                transform: translate(20px, 20px);
+                            </div>
+                        </div>
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--translate-interest">
+                                transform: translate(20%, 20%);
+                            </div>
+                        </div>
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--scale">
+                                transform: scale (2);
+                            </div>
+                        </div>
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--scale-back">
+                                transform: scale (0.5);
+                            </div>
+                        </div>
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--scale-mirror">
+                                transform: scale (-1, 1);
+                            </div>
+                        </div>
+                    </div>
+                    <div class="practice__block">
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--rotate-180deg">
+                                transform: rotate(-180deg);
+                            </div>
+                        </div>
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--rotate45deg">
+                                transform: rotate(45deg);
+                            </div>
+                        </div>
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--rotateX90deg">
+                                transform: rotateX(90deg);
+                            </div>
+                        </div>
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--rotateY90deg">
+                                transform: rotateY(90deg);
+                            </div>
+                        </div>
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--rotate360deg">
+                                transform: rotate(360deg);
+                            </div>
+                        </div>
+                    </div>
+                    <div class="practice__block">
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--skew">
+                                transform: skew(20deg, 15deg);
+                            </div>
+                        </div>
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--skew-20deg">
+                                transform: skew(-20deg, 0deg);
+                            </div>
+                        </div>
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--matrix">
+                                transform: matrix(1, 2, 5, 1, 10, 50);
+                            </div>
+                        </div>
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--matrix2">
+                                transform: translate(20px, 20px) scale(0.5) rotate(-25deg) skew(-30deg);
+                            </div>
+                        </div>
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--origin">
+                                transform: rotate(40deg);
+                                /* center це за замовченням */
+                                transform-origin: center;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="practice__block">
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--origin2">
+                                transform: rotate(45deg);
+                                transform-origin: 0 0;
+                            </div>
+                        </div>
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--origin3">
+                                transform: rotate(45deg);
+                                transform-origin: 50% 50%;
+                            </div>
+                        </div>
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--origin4">
+                                transform: rotate(20deg);
+                                transform-origin: top;
+                            </div>
+                        </div>
+                        <div class="practice__item block-2d">
+                            <div class="block-2d__item block-2d__item--origin5">
+                                transform: rotate(200deg);
+                                transform-origin: -20px 0px; 
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="main__subtitle">3D Трансформації</h2>
+                    <div class="practice__block">
+                        <div class="practice__item block-3d">
+                            <div class="block-3d__item block-3d__item--rotateX">
+                                (perspective: 100px;) задається батьківському елементу 
+                                transform: rotateX(45deg);
+                            </div>
+                        </div>
+                        <div class="practice__item block-3d">
+                            <div class="block-3d__item block-3d__item--translate3d">
+                                (perspective: 100px;) задається батьківському елементу 
+                                transform: translate3d(20px, -20px, 50px);
+                            </div>
+                        </div>
+                        <div class="practice__item block-3d">
+                            <div class="block-3d__item block-3d__item--scale3d">
+                                transform: scale3d(2, 2,2);
+                            </div>
+                        </div>
+                        <div class="practice__item block-3d">
+                            <div class="block-3d__item block-3d__item--rotate3d">
+                                (perspective: 100px;) задається батьківському елементу
+                                transform: rotate3d(0, 20, 0, 30deg);
+                            </div>
+                        </div>
+                    </div>
+                    <div class="practice__block">
+                        <div class="practice__item block-3d">
+                            <div class="block-3d__item block-3d__item--translate3d-2">
+                                (perspective: 100px;) задається батьківському елементу 
+                                transform: rotateX(45deg);
+                            </div>
+                        </div>
+                        <div class="practice__item block-3d block-3d--style">
+                            <div class="block-3d__item block-3d__item--style">
+                                (transform-style: preserve-3d;) задається батьківському елементу 
+                                transform: rotateX(20deg);
+                            </div>
+                        </div>
+                        <div class="practice__item block-3d">
+                            <div class="block-3d__item block-3d__item--hidden">
+                                backface-visibility: hidden;
+                                transform: rotateY(180deg);
+                            </div>
+                        </div>
+                        <div class="practice__trancform ">
+                            <div class="trancform-3d">
+                                <div class="trancform-3d__item">
+                                    другий
+                                </div>
+                                <div class="block-3d__two">
+                                    перший
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="car">
+                    <div class="car-block">
+                        <div class="car__body">
+                            <div class="car__cabin">
+                                <div class="car__glass"></div>
+                            </div>
+                            <div class="car__wheel">
+                            <div class="car__wheel-1"></div>
+                            <div class="car__wheel-2"></div>
+                            <div class="car__wheel-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer"> 
+        </footer>
+
+    </div>
+</body>
+</html>
