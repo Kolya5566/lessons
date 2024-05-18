@@ -346,7 +346,6 @@ body {
 	left: 20px;
 	width: 20px;
 	height: 30px;
-	opacity: 50px;
 }
 .check__text {
     font-size: 16px;
@@ -548,7 +547,7 @@ body {
     border:none;
     background-color: #ffbc57;
     background-image: url(../img/blok-3/rb.svg);
-    background-position: -2px px;
+    /* background-position: -2px 0px; */
 }
 .pay__text {
     font-size: 17px;
