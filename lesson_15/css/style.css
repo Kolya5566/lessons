@@ -62,7 +62,7 @@ body {
 .container-cap__items {
     transition: 0.5s;
 }
-.container-cap__item--ua {
+.container-cap__item-ua {
     margin: 0px 20px 0px 10px;
 	font-size: 19px;
 	font-weight: 600;
@@ -70,11 +70,11 @@ body {
 	text-transform: uppercase;
 	position: relative;
 }
-.container-cap__item--ua span::after {
+.container-cap__item-ua span::after {
     content: url("../img/arrow.svg");
     position: absolute;
 }
-.container-cap__item--ua span:hover::after {
+.container-cap__item-ua span:hover::after {
     cursor: pointer;
 }
 .container-cap__list .container-cap__item:hover {
